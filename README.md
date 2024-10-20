@@ -6,10 +6,12 @@
 [Lab 1](#lab-1)\
 [Lab 2](#lab-2)
 
+
+
 ## Lab 1
 
 ### Source code 
-https://github.com/yablonya/JavaSoftwareCourse/blob/master/Lab1/src/Main.java
+[https://github.com/yablonya/JavaSoftwareCourse/blob/master/Lab1/src/Main.java](https://github.com/yablonya/JavaSoftwareCourse/blob/master/Lab1/src/Main.java)
 
 ### How to use
 In method `main` set your matrices in variables `matrix1` and `matrix2`\
@@ -29,10 +31,11 @@ byte[][] matrix2 = {
 and then run your code
 
 
+
 ## Lab 2
 
 ### Source code 
-https://github.com/yablonya/JavaSoftwareCourse/blob/master/Lab2/src/Main.java
+[https://github.com/yablonya/JavaSoftwareCourse/blob/master/Lab2/src/Main.java](https://github.com/yablonya/JavaSoftwareCourse/blob/master/Lab2/src/Main.java)
 
 ### How to use
 In method `main`, in `try` block find variable `text` and set the text that you want to procces\
