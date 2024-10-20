@@ -1,10 +1,12 @@
 # Repository for the subject Software development on the Java platform
 ## Author: Danylo Yablonskyi
 ## Group: IA-24
-
+<br>
+<br>
 ## Instructions for laboratory works
-[Lab 1](#lab-1)\
-[Lab 2](#lab-2)
+- [Lab 1](#lab-1)\
+- [Lab 2](#lab-2)
+<br>
 <br>
 <br>
 ## Lab 1
@@ -28,6 +30,7 @@ byte[][] matrix2 = {
                    };
 ```
 and then run your code
+<br>
 <br>
 <br>
 ## Lab 2
