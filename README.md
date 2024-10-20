@@ -5,9 +5,8 @@
 ## Instructions for laboratory works
 [Lab 1](#lab-1)\
 [Lab 2](#lab-2)
-
-
-
+\
+\
 ## Lab 1
 
 ### Source code 
@@ -29,9 +28,8 @@ byte[][] matrix2 = {
                    };
 ```
 and then run your code
-
-
-
+\
+\
 ## Lab 2
 
 ### Source code 
