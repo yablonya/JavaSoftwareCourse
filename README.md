@@ -6,6 +6,7 @@
 ## Instructions for laboratory works
 - [Lab 1](#lab-1)
 - [Lab 2](#lab-2)
+- [Lab 3](#lab-3)
 <br>
 <br>
 
@@ -43,5 +44,31 @@ and then run your code
 In method `main`, in `try` block find variable `text` and set the text that you want to procces\
 ```java
 String text = "*your text*";
+```
+and then run your code
+<br>
+<br>
+<br>
+
+## Lab 3
+
+### Source code 
+[https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab3/src](https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab3/src)
+
+### How to use
+Go to the `Main` class and in  method `main` find variable `blocks` and set all building blocks that you want to procces\
+```java
+BuildingBlock[] blocks = {
+                // First param - name, second - color, third - hardness, fourth - weight, fifth - durability
+                new BuildingBlock("Wood", "Brown", 2.5, 1.5, 50),
+                new BuildingBlock("Pine", "Brown", 2.5, 2, 50),
+                new BuildingBlock("Stone", "Gray", 6.0, 3.0, 200),
+                new BuildingBlock("Iron", "Silver", 7.0, 4.5, 300),
+                new BuildingBlock("Gold", "Yellow", 5.0, 4.0, 100),
+        };
+```
+Then go down below, find variable `searchBlock` and set a block identical to the one you want to find in the previously specified blocks\
+```java
+BuildingBlock searchBlock = new BuildingBlock("Gold", "Yellow", 5.0, 4.0, 100);
 ```
 and then run your code
