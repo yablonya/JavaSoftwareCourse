@@ -57,7 +57,7 @@ and then run your code
 [https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab3/src](https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab3/src)
 
 ### How to use
-Go to the `Main` class and in  method `main` find variable `blocks` and set all building blocks that you want to procces
+Go to the `Main` class, in method `main` find variable `blocks` and set all building blocks that you want to procces
 ```java
 BuildingBlock[] blocks = {
                 // First param - name, second - color, third - hardness, fourth - weight, fifth - durability
@@ -83,7 +83,7 @@ and then run your code
 [https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab4/src](https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab4/src)
 
 ### How to use
-Go to the `Main` class and in  method `main` find variable `originalText` and set a text that you want to procces
+Go to the `Main` class, in method `main` find variable `originalText` and set a text that you want to procces
 ```java
 String originalText = "Вже давно відомо, що читабельний зміст буде заважати зосередитись людині..."
 ```
