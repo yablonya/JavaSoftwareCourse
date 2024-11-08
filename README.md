@@ -8,6 +8,7 @@
 - [Lab 2](#lab-2)
 - [Lab 3](#lab-3)
 - [Lab 4](#lab-4)
+- [Lab 5](#lab-5)
 <br>
 <br>
 
@@ -86,5 +87,31 @@ and then run your code
 Go to the `Main` class, in method `main` find variable `originalText` and set a text that you want to procces
 ```java
 String originalText = "Вже давно відомо, що читабельний зміст буде заважати зосередитись людині..."
+```
+and then run your code
+<br>
+<br>
+<br>
+
+## Lab 5
+
+### Source code 
+[https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab5/src](https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab5/src)
+
+### How to use
+Go to the `Main` class, in method `main` find variable `fleet` and set all aircrafts that you want to procces
+```java
+Aircraft[] fleet = {
+                new PassengerPlane("Boeing 747", 400, 20.0, 14000, 5.0, 350, 50),
+                new PassengerPlane("Airbus A380", 500, 30.0, 15000, 6.0, 450, 50),
+                new CargoPlane("Boeing 777F", 2, 100.0, 9000, 8.0, 600),
+                new MilitaryPlane("F-22 Raptor", 1, 5.0, 3000, 15.0, "Missiles")
+        };
+
+```
+Then go down below, find variables `minConsumption` and `maxConsumption` and set min and max fuel consumption accordingly to find aircrafts within this specified fuel consumption range
+```java
+double minConsumption = 5.0;
+double maxConsumption = 10.0;
 ```
 and then run your code
