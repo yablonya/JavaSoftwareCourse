@@ -10,14 +10,13 @@ public class Main {
      * @param args command-line arguments (not used)
      */
     public static void main(String[] args) {
-        // Creating instances of different types of aircraft
-        PassengerPlane passengerPlane1 = new PassengerPlane("Boeing 747", 400, 20.0, 14000, 5.0, 350, 50);
-        PassengerPlane passengerPlane2 = new PassengerPlane("Airbus A380", 500, 30.0, 15000, 6.0, 450, 50);
-        CargoPlane cargoPlane1 = new CargoPlane("Boeing 777F", 2, 100.0, 9000, 8.0, 600);
-        MilitaryPlane militaryPlane1 = new MilitaryPlane("F-22 Raptor", 1, 5.0, 3000, 15.0, "Missiles");
-
         // Initializing the fleet with a mix of aircraft types
-        Aircraft[] fleet = {passengerPlane1, passengerPlane2, cargoPlane1, militaryPlane1};
+        Aircraft[] fleet = {
+                new PassengerPlane("Boeing 747", 400, 20.0, 14000, 5.0, 350, 50),
+                new PassengerPlane("Airbus A380", 500, 30.0, 15000, 6.0, 450, 50),
+                new CargoPlane("Boeing 777F", 2, 100.0, 9000, 8.0, 600),
+                new MilitaryPlane("F-22 Raptor", 1, 5.0, 3000, 15.0, "Missiles")
+        };
 
         // Creating an instance of AirlineCompany with the fleet
         AirlineCompany airlineCompany = new AirlineCompany(fleet);
