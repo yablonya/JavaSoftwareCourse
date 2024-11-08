@@ -102,6 +102,8 @@ and then run your code
 Go to the `Main` class, in method `main` find variable `fleet` and set all aircrafts that you want to procces
 ```java
 Aircraft[] fleet = {
+                // First param - model, second - capacity, third - cargo capacity, fourth - flight range, fifth - fuel consumption
+                // To find out the specific fields for a class, see its documentation
                 new PassengerPlane("Boeing 747", 400, 20.0, 14000, 5.0, 350, 50),
                 new PassengerPlane("Airbus A380", 500, 30.0, 15000, 6.0, 450, 50),
                 new CargoPlane("Boeing 777F", 2, 100.0, 9000, 8.0, 600),
