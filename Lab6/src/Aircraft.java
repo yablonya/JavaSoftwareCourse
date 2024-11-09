@@ -102,4 +102,3 @@ public class Aircraft {
                 cargoCapacity + " tons, Flight Range: " + flightRange + " km, Fuel Consumption: " + fuelConsumption + " L/km";
     }
 }
-
