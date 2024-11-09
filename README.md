@@ -9,6 +9,7 @@
 - [Lab 3](#lab-3)
 - [Lab 4](#lab-4)
 - [Lab 5](#lab-5)
+- [Lab 6](#lab-6)
 <br>
 <br>
 
@@ -115,5 +116,28 @@ Then go down below, find variables `minConsumption` and `maxConsumption` and set
 ```java
 double minConsumption = 5.0;
 double maxConsumption = 10.0;
+```
+and then run your code
+<br>
+<br>
+<br>
+
+## Lab 6
+
+### Source code 
+[https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab6/src](https://github.com/yablonya/JavaSoftwareCourse/tree/master/Lab6/src)
+
+### How to use
+Go to the `Main` class, in method `main` at its beginning create as many instances of the Aircraft class you want to procces and then add them all to aircraft collection
+```java
+// First param - model, second - capacity, third - cargo capacity, fourth - flight range, fifth - fuel consumption
+Aircraft aircraft1 = new Aircraft("Boeing 747", 400, 70.0, 13000.0, 3.5);
+Aircraft aircraft2 = new Aircraft("Airbus A320", 180, 30.0, 6100.0, 2.5);
+Aircraft aircraft3 = new Aircraft("Cessna 172", 4, 0.5, 1280.0, 0.2);
+
+AircraftCollection collection = new AircraftCollection();
+collection.add(aircraft1);
+collection.add(aircraft2);
+collection.add(aircraft3);
 ```
 and then run your code
