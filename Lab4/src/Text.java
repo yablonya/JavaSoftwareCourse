@@ -1,11 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 /**
  * Represents a text composed of multiple sentences.
  */
 public class Text {
-    private List<Sentence> sentences;
+    private Sentence[] sentences;
+    private int sentenceCount; // Tracks the number of sentences added
 
     /**
      * Constructor to create a Text object from a string.
@@ -13,7 +13,8 @@ public class Text {
      * @param text the string representing the entire text
      */
     public Text(String text) {
-        sentences = new ArrayList<>();
+        sentences = new Sentence[text.length()]; // Initial capacity set to length of the text
+        sentenceCount = 0;
         parseText(text);
     }
 
@@ -25,17 +26,38 @@ public class Text {
     private void parseText(String text) {
         String[] sentenceArray = text.split("(?<=\\.)\\s+"); // Split by period followed by space
         for (String s : sentenceArray) {
-            sentences.add(new Sentence(s));
+            addSentence(new Sentence(s));
         }
+    }
+
+    /**
+     * Adds a sentence to the sentences array.
+     *
+     * @param sentence the Sentence object to add
+     */
+    private void addSentence(Sentence sentence) {
+        if (sentenceCount == sentences.length) {
+            expandSentencesArray(); // Expand the array if needed
+        }
+        sentences[sentenceCount++] = sentence;
+    }
+
+    /**
+     * Expands the sentences array when it reaches capacity.
+     */
+    private void expandSentencesArray() {
+        Sentence[] newSentences = new Sentence[sentences.length * 2];
+        System.arraycopy(sentences, 0, newSentences, 0, sentences.length);
+        sentences = newSentences;
     }
 
     /**
      * Returns the list of sentences in this text.
      *
-     * @return a list of Sentence objects in this text
+     * @return an array of Sentence objects in this text
      */
-    public List<Sentence> getSentences() {
-        return sentences;
+    public Sentence[] getSentences() {
+        return Arrays.copyOf(sentences, sentenceCount); // Return a trimmed array
     }
 
     /**
@@ -46,9 +68,10 @@ public class Text {
     @Override
     public String toString() {
         String text = "";
-        for (Sentence sentence : sentences) {
-            text += sentence.toString() + " ";
+        for (int i = 0; i < sentenceCount; i++) {
+            text += sentences[i].toString() + " ";
         }
         return text.trim();
     }
 }
+
